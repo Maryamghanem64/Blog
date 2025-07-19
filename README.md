@@ -4,7 +4,6 @@ A modern, responsive blog platform built with PHP, MySQL, HTML, CSS, JavaScript,
 
 ## Features
 - User registration and login (with validation and security)
-- Dark mode and light mode support
 - Create, edit, and delete blog posts with image uploads
 - Category management for posts
 - Commenting system for posts
