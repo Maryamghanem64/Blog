@@ -1,0 +1,108 @@
+/* Global Sparkle hover effects */
+a:not(.btn) {
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+a:not(.btn):hover {
+  transform: translateY(-2px);
+}
+a:not(.btn):hover::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  /* Removed sparkle effect from h tags as requested */
+  background: transparent;
+  animation: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Elegant heading hover effects */
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  color: inherit;
+  text-align: center;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  transform: scale(1.1);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6 {
+  color: #ffffff; /* White for headings */
+}
+
+body.dark-mode h1:hover, 
+body.dark-mode h2:hover, 
+body.dark-mode h3:hover, 
+body.dark-mode h4:hover, 
+body.dark-mode h5:hover, 
+body.dark-mode h6:hover {
+  transform: scale(1.1);
+  text-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes sparkle {
+  0% { transform: rotate(0deg) scale(0.8); opacity: 0.7; }
+  50% { transform: rotate(180deg) scale(1.2); opacity: 0.9; }
+  100% { transform: rotate(360deg) scale(0.8); opacity: 0.7; }
+}
+
+@keyframes underline {
+  from { width: 0; opacity: 0; }
+  to { width: 100%; opacity: 1; }
+}
+
+/* Special styling for sidebar links */
+.sidebar a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.sidebar a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Dark mode compatibility */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+body.dark-mode a:not(.btn) {
+  color: #a7c957; /* Pistachio accent color for links */
+}
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6 {
+  color: #ffffff; /* White for headings */
+}
+body.dark-mode a:not(.btn):hover::after {
+  background: radial-gradient(circle, rgba(167,201,87,0.4) 0%, transparent 70%);
+}
+body.dark-mode .sidebar a:hover {
+  background: rgba(167,201,87,0.1); /* Pistachio tint for sidebar hover */
+}
+/* Removed dark mode hover effect from all h tags as requested */
+/* body.dark-mode h1:hover::before,
+body.dark-mode h2:hover::before,
+body.dark-mode h3:hover::before,
+body.dark-mode h4:hover::before,
+body.dark-mode h5:hover::before,
+body.dark-mode h6:hover::before {
+  background: linear-gradient(90deg, #a7c957 0%, #8fb84a 100%); /* Pistachio gradient */
+}
+*/

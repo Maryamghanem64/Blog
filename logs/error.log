@@ -1,0 +1,350 @@
+[13-Jul-2025 16:52:46 UTC] Login error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[13-Jul-2025 18:52:50 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[13-Jul-2025 18:52:50 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[13-Jul-2025 18:52:50 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[13-Jul-2025 18:52:50 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[13-Jul-2025 18:53:16 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[13-Jul-2025 18:53:16 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[13-Jul-2025 18:53:16 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[13-Jul-2025 18:53:16 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[13-Jul-2025 16:53:17 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'field list'
+[13-Jul-2025 18:53:52 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[13-Jul-2025 18:53:52 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[13-Jul-2025 18:53:52 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[13-Jul-2025 18:53:52 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[13-Jul-2025 16:53:52 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'field list'
+[13-Jul-2025 18:53:55 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[13-Jul-2025 18:53:55 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[13-Jul-2025 18:53:55 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[13-Jul-2025 18:53:55 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[13-Jul-2025 16:53:55 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'field list'
+[13-Jul-2025 18:54:04 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[13-Jul-2025 18:54:04 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[13-Jul-2025 18:54:04 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[13-Jul-2025 18:54:04 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[13-Jul-2025 16:54:04 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'field list'
+[14-Jul-2025 12:01:53 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 12:01:53 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 12:01:53 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 12:01:53 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 12:01:53 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:02:49 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:02:49 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:02:49 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:02:49 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:02:49 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:02:56 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:02:56 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:02:56 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:02:56 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:02:56 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:08:54 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:08:54 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:08:54 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:08:54 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:08:54 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:09:30 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:09:30 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:09:30 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:09:30 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:09:31 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:09:33 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:09:33 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:09:33 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:09:33 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:09:33 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:09:34 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:09:34 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:09:34 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:09:34 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:09:34 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:09:48 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:09:48 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:09:48 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:09:48 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:09:48 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 15:10:05 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[14-Jul-2025 15:10:05 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[14-Jul-2025 15:10:05 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[14-Jul-2025 15:10:05 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[14-Jul-2025 15:10:30 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[14-Jul-2025 15:10:30 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[14-Jul-2025 15:10:30 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[14-Jul-2025 15:10:30 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[14-Jul-2025 13:10:30 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'field list'
+[14-Jul-2025 15:10:48 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[14-Jul-2025 15:10:48 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[14-Jul-2025 15:10:48 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[14-Jul-2025 15:10:48 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[14-Jul-2025 13:10:48 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'field list'
+[14-Jul-2025 15:11:03 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[14-Jul-2025 15:11:06 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[14-Jul-2025 15:11:06 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[14-Jul-2025 15:11:06 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[14-Jul-2025 13:11:06 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'field list'
+[14-Jul-2025 15:11:27 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[14-Jul-2025 15:11:30 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[14-Jul-2025 15:11:30 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[14-Jul-2025 15:11:30 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[14-Jul-2025 15:11:34 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[14-Jul-2025 15:11:34 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[14-Jul-2025 15:11:34 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[14-Jul-2025 15:11:34 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[14-Jul-2025 15:11:52 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[14-Jul-2025 15:11:52 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[14-Jul-2025 15:11:52 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[14-Jul-2025 15:11:52 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[14-Jul-2025 15:11:53 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[14-Jul-2025 15:11:53 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[14-Jul-2025 15:11:53 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[14-Jul-2025 15:11:53 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[14-Jul-2025 15:12:15 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[14-Jul-2025 15:12:15 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[14-Jul-2025 15:12:15 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[14-Jul-2025 15:12:15 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[14-Jul-2025 13:12:15 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'field list'
+[14-Jul-2025 15:12:43 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[14-Jul-2025 15:12:43 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[14-Jul-2025 15:12:43 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[14-Jul-2025 15:12:43 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[14-Jul-2025 13:12:43 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'field list'
+[14-Jul-2025 13:14:20 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:14:20 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:14:20 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:14:20 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:14:20 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:14:25 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:14:25 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:14:25 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:14:25 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:14:25 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:24:23 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:24:23 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:24:23 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:24:23 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:24:23 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:24:23 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:24:23 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:24:23 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:24:23 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:24:23 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 15:26:35 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[14-Jul-2025 15:26:35 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[14-Jul-2025 15:26:35 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[14-Jul-2025 15:26:35 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[14-Jul-2025 15:26:56 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[14-Jul-2025 15:26:56 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[14-Jul-2025 15:26:56 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[14-Jul-2025 15:26:56 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[14-Jul-2025 15:27:08 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[14-Jul-2025 15:27:08 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[14-Jul-2025 15:27:08 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[14-Jul-2025 15:27:08 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[14-Jul-2025 13:27:08 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'field list'
+[14-Jul-2025 13:34:29 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:34:29 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:34:29 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:34:29 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:34:29 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:34:29 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:34:29 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:34:29 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:34:29 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:34:29 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:34:29 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:34:29 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:34:29 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:34:29 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:34:29 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:41:25 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:41:25 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[14-Jul-2025 13:41:25 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[14-Jul-2025 13:41:25 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[14-Jul-2025 13:41:25 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[17-Jul-2025 10:54:31 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[17-Jul-2025 10:54:31 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[17-Jul-2025 10:54:31 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[17-Jul-2025 10:54:31 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[17-Jul-2025 10:54:31 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[17-Jul-2025 10:54:36 UTC] Get post stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[17-Jul-2025 10:54:36 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[17-Jul-2025 10:54:36 UTC] Get category stats error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[17-Jul-2025 10:54:36 UTC] Get recent posts error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.status' in 'where clause'
+[17-Jul-2025 10:54:36 UTC] Get posts by user error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blogg_db.post_categories' doesn't exist
+[17-Jul-2025 12:57:03 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[17-Jul-2025 12:57:03 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[17-Jul-2025 12:57:03 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[17-Jul-2025 12:57:03 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[17-Jul-2025 12:57:44 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[17-Jul-2025 12:57:44 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[17-Jul-2025 12:57:44 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[17-Jul-2025 12:57:44 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[17-Jul-2025 10:57:44 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'field list'
+[17-Jul-2025 12:57:57 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[17-Jul-2025 12:57:57 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[17-Jul-2025 12:57:57 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[17-Jul-2025 12:57:57 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[17-Jul-2025 10:57:57 UTC] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'field list'
+[17-Jul-2025 12:58:28 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[17-Jul-2025 12:58:28 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[17-Jul-2025 12:58:28 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[17-Jul-2025 12:58:28 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[18-Jul-2025 11:53:48 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[18-Jul-2025 11:53:48 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[18-Jul-2025 11:53:48 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[18-Jul-2025 11:53:48 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[19-Jul-2025 13:03:31 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[19-Jul-2025 13:03:31 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[19-Jul-2025 13:03:31 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[19-Jul-2025 13:03:31 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[19-Jul-2025 13:03:55 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 44
+[19-Jul-2025 13:03:55 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 45
+[19-Jul-2025 13:03:55 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 46
+[19-Jul-2025 13:03:55 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\blog\config\config.php on line 47
+[19-Jul-2025 11:04:12 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[19-Jul-2025 11:04:12 UTC] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:04:12 UTC] PHP Warning:  Undefined array key "title" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:04:12 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:04:12 UTC] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:04:12 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:04:12 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:04:12 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:04:12 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:04:12 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:04:12 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:04:12 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:04:12 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:04:12 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:04:12 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:04:12 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:04:12 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:04:12 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:04:12 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:04:12 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:04:12 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:04:59 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[19-Jul-2025 11:05:03 UTC] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:05:03 UTC] PHP Warning:  Undefined array key "title" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:05:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:05:03 UTC] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:05:03 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:05:03 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:05:03 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:05:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:05:03 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:05:03 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:05:03 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:05:03 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:05:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:05:03 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:05:03 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:05:03 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:05:03 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:05:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:05:03 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:05:03 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:09:41 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[19-Jul-2025 11:09:41 UTC] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:09:41 UTC] PHP Warning:  Undefined array key "title" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:09:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:09:41 UTC] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:09:41 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:09:41 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:09:41 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:09:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:09:41 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:09:41 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:09:41 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:09:41 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:09:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:09:41 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:09:41 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:09:41 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:09:41 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:09:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:09:41 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:09:41 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:13:41 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[19-Jul-2025 11:13:41 UTC] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:13:41 UTC] PHP Warning:  Undefined array key "title" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:13:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:13:41 UTC] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:13:41 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:13:41 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:13:41 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:13:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:13:41 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:13:41 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:13:41 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:13:41 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:13:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:13:41 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:13:41 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:13:41 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:13:41 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:13:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:13:41 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:13:41 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:15:47 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[19-Jul-2025 11:15:47 UTC] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:15:47 UTC] PHP Warning:  Undefined array key "title" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:15:47 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:15:47 UTC] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:15:47 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:15:47 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:15:47 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:15:47 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:15:47 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:15:47 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:15:47 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:15:47 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:15:47 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:15:47 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:15:47 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:15:47 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:15:47 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:15:47 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:15:47 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:15:47 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:19:54 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[19-Jul-2025 11:19:54 UTC] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:19:54 UTC] PHP Warning:  Undefined array key "title" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:19:54 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:19:54 UTC] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:19:54 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:19:54 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:19:54 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:19:54 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:19:54 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:19:54 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:19:54 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:19:54 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:19:54 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:19:54 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:19:54 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:19:54 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:19:54 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:19:54 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:19:54 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:19:54 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:21:39 UTC] Get comment stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+[19-Jul-2025 11:21:39 UTC] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:21:39 UTC] PHP Warning:  Undefined array key "title" in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:21:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:21:39 UTC] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:21:39 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:21:39 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:21:39 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:21:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:21:39 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:21:39 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:21:39 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:21:39 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:21:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:21:39 UTC] PHP Warning:  Trying to access array offset on value of type float in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:21:39 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:21:39 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:21:39 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:21:39 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 403
+[19-Jul-2025 11:21:39 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\blog\dashboard.php on line 404
+[19-Jul-2025 11:21:39 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\blog\dashboard.php on line 404
