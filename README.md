@@ -34,7 +34,6 @@ A modern, responsive blog platform built with PHP, MySQL, HTML, CSS, JavaScript,
 ## Usage Notes
 - **Admin User:** Default admin credentials are set in `database_setup.sql`.
 - **Image Uploads:** Supported formats: JPG, JPEG, PNG, GIF. Max size: 5MB.
-- **Dark Mode:** Toggle dark mode using the provided button in the UI.
 - **Security:** CSRF protection, input sanitization, and password hashing are implemented.
 
 ## Folder Structure
