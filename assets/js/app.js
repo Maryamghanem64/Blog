@@ -1,588 +1,483 @@
 /**
- * Professional Blog Platform - Main JavaScript
- * Modern functionality with dark mode and interactive features
+ * Professional Blog Platform - Enhanced JavaScript with Animations
+ * Modern, responsive animations and interactions
  */
 
-class BlogApp {
+class BlogAnimations {
     constructor() {
         this.init();
     }
-    
+
     init() {
-        this.setupDarkMode();
-        this.setupEventListeners();
         this.setupAnimations();
-        this.setupFormValidation();
-        this.setupSearch();
-        this.setupNotifications();
+        this.setupScrollAnimations();
+        this.setupHoverEffects();
+        this.setupFormAnimations();
+        this.setupLoadingAnimations();
+        this.setupTypingEffect();
+        this.setupParallaxEffects();
+        this.setupStaggeredAnimations();
     }
-    
-    /**
-     * Dark mode functionality
-     */
-    setupDarkMode() {
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        const html = document.documentElement;
-        
-        // Check for saved preference
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            html.setAttribute('data-theme', savedTheme);
-            this.updateDarkModeIcon(savedTheme === 'dark');
-        }
-        
-        // Toggle dark mode
-        if (darkModeToggle) {
-            darkModeToggle.addEventListener('click', () => {
-                const currentTheme = html.getAttribute('data-theme');
-                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                
-                html.setAttribute('data-theme', newTheme);
-                localStorage.setItem('theme', newTheme);
-                this.updateDarkModeIcon(newTheme === 'dark');
-                
-                // Trigger custom event
-                document.dispatchEvent(new CustomEvent('themeChanged', { detail: newTheme }));
-            });
-        }
-    }
-    
-    updateDarkModeIcon(isDark) {
-        const icon = document.getElementById('darkModeIcon');
-        if (icon) {
-            icon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
-        }
-    }
-    
-    /**
-     * Event listeners setup
-     */
-    setupEventListeners() {
-        // Mobile menu toggle
-        const mobileMenuToggle = document.querySelector('.navbar-toggler');
-        const navbarCollapse = document.querySelector('.navbar-collapse');
-        
-        if (mobileMenuToggle && navbarCollapse) {
-            mobileMenuToggle.addEventListener('click', () => {
-                navbarCollapse.classList.toggle('show');
-            });
-        }
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.navbar') && navbarCollapse?.classList.contains('show')) {
-                navbarCollapse.classList.remove('show');
-            }
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-        
-        // Lazy loading for images
-        this.setupLazyLoading();
-        
-        // Infinite scroll for posts
-        this.setupInfiniteScroll();
-    }
-    
-    /**
-     * Lazy loading for images
-     */
-    setupLazyLoading() {
-        const images = document.querySelectorAll('img[data-src]');
-        
-        if ('IntersectionObserver' in window) {
-            const imageObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        img.src = img.dataset.src;
-                        img.classList.remove('lazy');
-                        imageObserver.unobserve(img);
-                    }
-                });
-            });
-            
-            images.forEach(img => imageObserver.observe(img));
-        } else {
-            // Fallback for older browsers
-            images.forEach(img => {
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-            });
-        }
-    }
-    
-    /**
-     * Infinite scroll functionality
-     */
-    setupInfiniteScroll() {
-        const postsContainer = document.querySelector('.posts-container');
-        if (!postsContainer) return;
-        
-        let page = 1;
-        let loading = false;
-        let hasMore = true;
-        
-        const loadMorePosts = async () => {
-            if (loading || !hasMore) return;
-            
-            loading = true;
-            this.showLoadingSpinner();
-            
-            try {
-                const response = await fetch(`/api/posts?page=${page + 1}`);
-                const data = await response.json();
-                
-                if (data.posts && data.posts.length > 0) {
-                    data.posts.forEach(post => {
-                        const postElement = this.createPostElement(post);
-                        postsContainer.appendChild(postElement);
-                    });
-                    page++;
-                } else {
-                    hasMore = false;
-                }
-            } catch (error) {
-                console.error('Error loading more posts:', error);
-            } finally {
-                loading = false;
-                this.hideLoadingSpinner();
-            }
-        };
-        
-        // Intersection Observer for infinite scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && hasMore) {
-                    loadMorePosts();
-                }
-            });
-        }, { threshold: 0.1 });
-        
-        // Observe the last post
-        const observeLastPost = () => {
-            const posts = postsContainer.querySelectorAll('.post-card');
-            if (posts.length > 0) {
-                observer.observe(posts[posts.length - 1]);
-            }
-        };
-        
-        observeLastPost();
-    }
-    
-    /**
-     * Create post element for infinite scroll
-     */
-    createPostElement(post) {
-        const div = document.createElement('div');
-        div.className = 'card post-card mb-4 fade-in';
-        div.innerHTML = `
-            <div class="card-body">
-                <h5 class="card-title">
-                    <a href="/post.php?id=${post.id}">${this.escapeHtml(post.title)}</a>
-                </h5>
-                <p class="card-text">${this.escapeHtml(post.excerpt || post.content.substring(0, 150))}...</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <small class="text-muted">
-                        By ${this.escapeHtml(post.username)} on ${this.formatDate(post.created_at)}
-                    </small>
-                    <span class="badge" style="background-color: var(--pistachio); color: var(--dark);">${this.escapeHtml(post.category_name)}</span>
-                </div>
-            </div>
-        `;
-        return div;
-    }
-    
-    /**
-     * Setup animations
-     */
+
+    // Setup initial page load animations
     setupAnimations() {
-        // Animate elements on scroll
+        // Animate elements on page load
+        const animatedElements = document.querySelectorAll('.animate-fade-in-up, .animate-slide-in-left, .animate-slide-in-right, .animate-scale-in');
+        
+        animatedElements.forEach((element, index) => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+            
+            setTimeout(() => {
+                element.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }, index * 100);
+        });
+
+        // Animate cards with stagger effect
+        const cards = document.querySelectorAll('.post-card, .category-card, .stat-card');
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(50px) scale(0.9)';
+            
+            setTimeout(() => {
+                card.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0) scale(1)';
+            }, index * 150);
+        });
+    }
+
+    // Setup scroll-triggered animations
+    setupScrollAnimations() {
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-        
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);
-        
-        // Observe all cards and sections
-        document.querySelectorAll('.card, .section').forEach(el => {
+
+        // Observe elements for scroll animations
+        const scrollElements = document.querySelectorAll('.post-card, .category-card, .stat-card, .comment, .alert');
+        scrollElements.forEach(el => {
+            el.classList.add('scroll-animate');
             observer.observe(el);
         });
-        
-        // Counter animations
-        this.setupCounterAnimations();
     }
-    
-    /**
-     * Counter animations
-     */
-    setupCounterAnimations() {
-        const counters = document.querySelectorAll('.counter');
-        
-        const animateCounter = (counter) => {
-            const target = parseInt(counter.getAttribute('data-target'));
-            const duration = 2000; // 2 seconds
-            const step = target / (duration / 16); // 60fps
-            let current = 0;
-            
-            const timer = setInterval(() => {
-                current += step;
-                if (current >= target) {
-                    current = target;
-                    clearInterval(timer);
-                }
-                counter.textContent = Math.floor(current);
-            }, 16);
-        };
-        
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounter(entry.target);
-                    counterObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-        
-        counters.forEach(counter => counterObserver.observe(counter));
-    }
-    
-    /**
-     * Form validation
-     */
-    setupFormValidation() {
-        const forms = document.querySelectorAll('form[data-validate]');
-        
-        forms.forEach(form => {
-            form.addEventListener('submit', (e) => {
-                if (!this.validateForm(form)) {
-                    e.preventDefault();
-                }
+
+    // Setup enhanced hover effects
+    setupHoverEffects() {
+        // Enhanced card hover effects
+        const cards = document.querySelectorAll('.post-card, .category-card, .stat-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', (e) => {
+                this.addHoverEffect(e.target);
             });
             
-            // Real-time validation
-            const inputs = form.querySelectorAll('input, textarea, select');
-            inputs.forEach(input => {
-                input.addEventListener('blur', () => {
-                    this.validateField(input);
-                });
-                
-                input.addEventListener('input', () => {
-                    this.clearFieldError(input);
-                });
+            card.addEventListener('mouseleave', (e) => {
+                this.removeHoverEffect(e.target);
+            });
+        });
+
+        // Button hover effects
+        const buttons = document.querySelectorAll('.btn, .btn-login, .btn-register, .btn-create-post');
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', (e) => {
+                this.addButtonHoverEffect(e.target);
+            });
+            
+            button.addEventListener('mouseleave', (e) => {
+                this.removeButtonHoverEffect(e.target);
+            });
+        });
+
+        // Link hover effects
+        const links = document.querySelectorAll('a:not(.btn)');
+        links.forEach(link => {
+            link.addEventListener('mouseenter', (e) => {
+                this.addLinkHoverEffect(e.target);
+            });
+            
+            link.addEventListener('mouseleave', (e) => {
+                this.removeLinkHoverEffect(e.target);
             });
         });
     }
-    
-    validateForm(form) {
-        let isValid = true;
-        const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
+
+    // Add hover effect to cards
+    addHoverEffect(element) {
+        element.style.transform = 'translateY(-10px) scale(1.02)';
+        element.style.boxShadow = '0 20px 40px rgba(167, 201, 87, 0.3)';
+        element.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+    }
+
+    // Remove hover effect from cards
+    removeHoverEffect(element) {
+        element.style.transform = 'translateY(0) scale(1)';
+        element.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+    }
+
+    // Add button hover effect
+    addButtonHoverEffect(element) {
+        element.style.transform = 'translateY(-3px) scale(1.05)';
+        element.style.boxShadow = '0 10px 25px rgba(167, 201, 87, 0.4)';
+        element.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+    }
+
+    // Remove button hover effect
+    removeButtonHoverEffect(element) {
+        element.style.transform = 'translateY(0) scale(1)';
+        element.style.boxShadow = 'none';
+    }
+
+    // Add link hover effect
+    addLinkHoverEffect(element) {
+        element.style.transform = 'translateY(-2px)';
+        element.style.color = '#8fb84a';
+        element.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+    }
+
+    // Remove link hover effect
+    removeLinkHoverEffect(element) {
+        element.style.transform = 'translateY(0)';
+        element.style.color = '#a7c957';
+    }
+
+    // Setup form animations
+    setupFormAnimations() {
+        const formInputs = document.querySelectorAll('input, textarea, select');
         
-        inputs.forEach(input => {
-            if (!this.validateField(input)) {
-                isValid = false;
-            }
+        formInputs.forEach(input => {
+            // Focus animation
+            input.addEventListener('focus', (e) => {
+                this.addInputFocusEffect(e.target);
+            });
+            
+            // Blur animation
+            input.addEventListener('blur', (e) => {
+                this.removeInputFocusEffect(e.target);
+            });
+            
+            // Input animation
+            input.addEventListener('input', (e) => {
+                this.addInputAnimation(e.target);
+            });
         });
-        
-        return isValid;
     }
-    
-    validateField(field) {
-        const value = field.value.trim();
-        let isValid = true;
-        let errorMessage = '';
-        
-        // Required validation
-        if (field.hasAttribute('required') && !value) {
-            isValid = false;
-            errorMessage = 'This field is required.';
-        }
-        
-        // Email validation
-        if (field.type === 'email' && value) {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(value)) {
-                isValid = false;
-                errorMessage = 'Please enter a valid email address.';
-            }
-        }
-        
-        // Password validation
-        if (field.type === 'password' && value) {
-            if (value.length < 8) {
-                isValid = false;
-                errorMessage = 'Password must be at least 8 characters long.';
-            }
-        }
-        
-        // URL validation
-        if (field.type === 'url' && value) {
-            try {
-                new URL(value);
-            } catch {
-                isValid = false;
-                errorMessage = 'Please enter a valid URL.';
-            }
-        }
-        
-        if (!isValid) {
-            this.showFieldError(field, errorMessage);
-        } else {
-            this.clearFieldError(field);
-        }
-        
-        return isValid;
+
+    // Add input focus effect
+    addInputFocusEffect(element) {
+        element.style.transform = 'scale(1.02)';
+        element.style.boxShadow = '0 0 0 3px rgba(167, 201, 87, 0.3)';
+        element.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
     }
-    
-    showFieldError(field, message) {
-        this.clearFieldError(field);
-        
-        field.classList.add('is-invalid');
-        const errorDiv = document.createElement('div');
-        errorDiv.className = 'invalid-feedback';
-        errorDiv.textContent = message;
-        field.parentNode.appendChild(errorDiv);
+
+    // Remove input focus effect
+    removeInputFocusEffect(element) {
+        element.style.transform = 'scale(1)';
+        element.style.boxShadow = 'none';
     }
-    
-    clearFieldError(field) {
-        field.classList.remove('is-invalid');
-        const errorDiv = field.parentNode.querySelector('.invalid-feedback');
-        if (errorDiv) {
-            errorDiv.remove();
-        }
+
+    // Add input animation
+    addInputAnimation(element) {
+        element.style.transform = 'scale(1.01)';
+        setTimeout(() => {
+            element.style.transform = 'scale(1)';
+        }, 100);
     }
-    
-    /**
-     * Search functionality
-     */
-    setupSearch() {
-        const searchForm = document.querySelector('.search-form');
-        const searchInput = document.querySelector('.search-input');
-        
-        if (searchForm && searchInput) {
-            let searchTimeout;
-            
-            searchInput.addEventListener('input', (e) => {
-                clearTimeout(searchTimeout);
-                const query = e.target.value.trim();
-                
-                if (query.length >= 2) {
-                    searchTimeout = setTimeout(() => {
-                        this.performSearch(query);
-                    }, 300);
-                } else if (query.length === 0) {
-                    this.clearSearchResults();
-                }
-            });
-            
-            searchForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const query = searchInput.value.trim();
-                if (query) {
-                    this.performSearch(query);
-                }
-            });
-        }
+
+    // Setup loading animations
+    setupLoadingAnimations() {
+        // Page loading animation
+        window.addEventListener('load', () => {
+            this.hideLoadingScreen();
+        });
+
+        // Show loading screen
+        this.showLoadingScreen();
     }
-    
-    async performSearch(query) {
-        try {
-            const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
-            const data = await response.json();
-            this.displaySearchResults(data.results, query);
-        } catch (error) {
-            console.error('Search error:', error);
-            this.showNotification('Search failed. Please try again.', 'error');
-        }
-    }
-    
-    displaySearchResults(results, query) {
-        const resultsContainer = document.querySelector('.search-results');
-        if (!resultsContainer) return;
-        
-        if (results.length === 0) {
-            resultsContainer.innerHTML = `
-                <div class="alert alert-info">
-                    No results found for "${this.escapeHtml(query)}"
-                </div>
-            `;
-            return;
-        }
-        
-        const resultsHtml = results.map(result => `
-            <div class="search-result-item">
-                <h6><a href="${result.url}">${this.escapeHtml(result.title)}</a></h6>
-                <p class="text-muted">${this.escapeHtml(result.excerpt)}</p>
-                <small class="text-muted">${this.formatDate(result.created_at)}</small>
+
+    // Show loading screen
+    showLoadingScreen() {
+        const loader = document.createElement('div');
+        loader.id = 'page-loader';
+        loader.innerHTML = `
+            <div class="loader-content">
+                <div class="loader-spinner"></div>
+                <div class="loader-text">Loading...</div>
             </div>
-        `).join('');
-        
-        resultsContainer.innerHTML = resultsHtml;
-        resultsContainer.style.display = 'block';
-    }
-    
-    clearSearchResults() {
-        const resultsContainer = document.querySelector('.search-results');
-        if (resultsContainer) {
-            resultsContainer.style.display = 'none';
-            resultsContainer.innerHTML = '';
-        }
-    }
-    
-    /**
-     * Notification system
-     */
-    setupNotifications() {
-        // Create notification container
-        if (!document.querySelector('.notification-container')) {
-            const container = document.createElement('div');
-            container.className = 'notification-container position-fixed top-0 end-0 p-3';
-            container.style.zIndex = '9999';
-            document.body.appendChild(container);
-        }
-    }
-    
-    showNotification(message, type = 'info', duration = 5000) {
-        const container = document.querySelector('.notification-container');
-        const notification = document.createElement('div');
-        
-        notification.className = `alert alert-${type} alert-dismissible fade show`;
-        notification.innerHTML = `
-            ${message}
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        `;
+        loader.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #a7c957 0%, #8fb84a 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
         `;
         
-        container.appendChild(notification);
+        const loaderContent = loader.querySelector('.loader-content');
+        loaderContent.style.cssText = `
+            text-align: center;
+            color: white;
+        `;
         
-        // Auto-remove after duration
-        setTimeout(() => {
-            if (notification.parentNode) {
-                notification.remove();
+        const spinner = loader.querySelector('.loader-spinner');
+        spinner.style.cssText = `
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        `;
+        
+        const text = loader.querySelector('.loader-text');
+        text.style.cssText = `
+            font-size: 18px;
+            font-weight: 600;
+        `;
+        
+        document.body.appendChild(loader);
+    }
+
+    // Hide loading screen
+    hideLoadingScreen() {
+        const loader = document.getElementById('page-loader');
+        if (loader) {
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.remove();
+            }, 500);
+        }
+    }
+
+    // Setup typing effect for headers
+    setupTypingEffect() {
+        const headers = document.querySelectorAll('h1, h2');
+        headers.forEach(header => {
+            if (header.textContent.length > 10) {
+                this.addTypingEffect(header);
             }
-        }, duration);
-    }
-    
-    /**
-     * Loading spinner
-     */
-    showLoadingSpinner() {
-        const spinner = document.createElement('div');
-        spinner.className = 'loading-spinner text-center py-4';
-        spinner.innerHTML = '<div class="spinner-border" style="color: var(--pistachio);" role="status"><span class="visually-hidden">Loading...</span></div>';
-        
-        const postsContainer = document.querySelector('.posts-container');
-        if (postsContainer) {
-            postsContainer.appendChild(spinner);
-        }
-    }
-    
-    hideLoadingSpinner() {
-        const spinner = document.querySelector('.loading-spinner');
-        if (spinner) {
-            spinner.remove();
-        }
-    }
-    
-    /**
-     * Utility functions
-     */
-    escapeHtml(text) {
-        const div = document.createElement('div');
-        div.textContent = text;
-        return div.innerHTML;
-    }
-    
-    formatDate(dateString) {
-        const date = new Date(dateString);
-        return date.toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
         });
     }
-    
-    /**
-     * AJAX helper
-     */
-    async fetchAPI(url, options = {}) {
-        try {
-            const response = await fetch(url, {
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-Requested-With': 'XMLHttpRequest',
-                    ...options.headers
-                },
-                ...options
+
+    // Add typing effect to element
+    addTypingEffect(element) {
+        const text = element.textContent;
+        element.textContent = '';
+        element.style.borderRight = '2px solid #a7c957';
+        
+        let i = 0;
+        const typeWriter = () => {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            } else {
+                element.style.borderRight = 'none';
+            }
+        };
+        
+        setTimeout(typeWriter, 1000);
+    }
+
+    // Setup parallax effects
+    setupParallaxEffects() {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.parallax');
+            
+            parallaxElements.forEach(element => {
+                const speed = element.dataset.speed || 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
             });
-            
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            
-            return await response.json();
-        } catch (error) {
-            console.error('API request failed:', error);
-            throw error;
-        }
+        });
     }
-    
-    /**
-     * Debounce function
-     */
-    debounce(func, wait) {
-        let timeout;
-        return function executedFunction(...args) {
-            const later = () => {
-                clearTimeout(timeout);
-                func(...args);
-            };
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-        };
+
+    // Setup staggered animations
+    setupStaggeredAnimations() {
+        const staggeredElements = document.querySelectorAll('.stagger-animate');
+        
+        staggeredElements.forEach((element, index) => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+            
+            setTimeout(() => {
+                element.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }, index * 200);
+        });
     }
-    
-    /**
-     * Throttle function
-     */
-    throttle(func, limit) {
-        let inThrottle;
-        return function() {
-            const args = arguments;
-            const context = this;
-            if (!inThrottle) {
-                func.apply(context, args);
-                inThrottle = true;
-                setTimeout(() => inThrottle = false, limit);
-            }
-        };
+
+    // Utility function to add ripple effect
+    addRippleEffect(event) {
+        const button = event.currentTarget;
+        const ripple = document.createElement('span');
+        const rect = button.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = event.clientX - rect.left - size / 2;
+        const y = event.clientY - rect.top - size / 2;
+        
+        ripple.style.cssText = `
+            position: absolute;
+            width: ${size}px;
+            height: ${size}px;
+            left: ${x}px;
+            top: ${y}px;
+            background: rgba(167, 201, 87, 0.3);
+            border-radius: 50%;
+            transform: scale(0);
+            animation: ripple 0.6s linear;
+            pointer-events: none;
+        `;
+        
+        button.appendChild(ripple);
+        
+        setTimeout(() => {
+            ripple.remove();
+        }, 600);
+    }
+
+    // Utility function to add shake effect
+    addShakeEffect(element) {
+        element.style.animation = 'shake 0.5s ease-in-out';
+        setTimeout(() => {
+            element.style.animation = '';
+        }, 500);
+    }
+
+    // Utility function to add pulse effect
+    addPulseEffect(element) {
+        element.style.animation = 'pulse 0.5s ease-in-out';
+        setTimeout(() => {
+            element.style.animation = '';
+        }, 500);
     }
 }
 
-// Initialize the app when DOM is loaded
+// Add CSS animations
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    @keyframes ripple {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+    
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+        20%, 40%, 60%, 80% { transform: translateX(5px); }
+    }
+    
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+    
+    .scroll-animate {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .scroll-animate.animate-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .stagger-animate {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    
+    .parallax {
+        transition: transform 0.1s ease-out;
+    }
+    
+    /* Enhanced button styles */
+    .btn, .btn-login, .btn-register, .btn-create-post {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    /* Enhanced card styles */
+    .post-card, .category-card, .stat-card {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+    }
+    
+    /* Enhanced form styles */
+    input, textarea, select {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    /* Enhanced link styles */
+    a:not(.btn) {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+`;
+
+document.head.appendChild(style);
+
+// Initialize animations when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    window.blogApp = new BlogApp();
+    new BlogAnimations();
+    
+    // Add ripple effect to buttons
+    const buttons = document.querySelectorAll('.btn, .btn-login, .btn-register, .btn-create-post');
+    buttons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const animations = new BlogAnimations();
+            animations.addRippleEffect(e);
+        });
+    });
+    
+    // Add shake effect to form validation errors
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.addEventListener('submit', (e) => {
+            const animations = new BlogAnimations();
+            const inputs = form.querySelectorAll('input[required], textarea[required]');
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    animations.addShakeEffect(input);
+                }
+            });
+        });
+    });
+    
+    // Add pulse effect to success messages
+    const alerts = document.querySelectorAll('.alert-success');
+    alerts.forEach(alert => {
+        const animations = new BlogAnimations();
+        animations.addPulseEffect(alert);
+    });
 });
 
-// Export for use in other modules
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = BlogApp;
-} 
+// Export for use in other scripts
+window.BlogAnimations = BlogAnimations; 
